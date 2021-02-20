@@ -1,0 +1,23 @@
+.recipes {
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+  min-width: 40%;
+  border-bottom: 1px solid rgb(63, 60, 60);
+}
+
+.recipe_title {
+  font-size: 1.5em;
+}
+.recipe_title,
+.recipe_calories {
+  color: rgb(56, 53, 53);
+  font-family: "Courier New", Courier, monospace;
+}
+.recipe_image {
+  border-radius: 50%;
+}

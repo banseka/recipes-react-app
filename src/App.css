@@ -8,23 +8,27 @@
   );
 }
 .search_form {
-  min-height: 10vh;
+  margin: 0 auto;
+  min-height: 7vh;
   display: flex;
   justify-content: center;
   align-content: center;
+  border-radius: 20px;
 }
 .search_bar {
   width: 50%;
   border: none;
   padding: 10px;
+  border-radius: 15px 0 0px 15px;
 }
 .search_button {
   background-color: rgb(19, 81, 105);
   padding: 10px, 20px;
   color: white;
   border: none;
+  border-radius: 0 15px 15px 0;
 }
-.recipes {
+.recipes_container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
