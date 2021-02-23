@@ -5,8 +5,8 @@ import SlideShow from "./components/slideShow";
 import "./App.css";
 
 const App = () => {
-  const APP_ID = "6ed03c09";
-  const APP_KEY = "41f1c2c57e9ae9dc8482c6d89cb181a1";
+  const APP_ID = process.env.REACT_APP_API_ID;
+  const APP_KEY = process.env.REACT_APP_API_KEY;
   //state variables
   const [recipes, setRecipes] = useState([]);
   const [recipeBody, setRecipeBody] = useState([]);
