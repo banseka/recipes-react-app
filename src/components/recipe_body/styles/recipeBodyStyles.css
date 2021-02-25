@@ -18,6 +18,15 @@
 .image {
   margin-left: 2em;
 }
+.back-btn {
+  font-size: 0.8em;
+  border: none;
+  background-color: rgb(32, 110, 110);
+  padding: 0.8em;
+  text-transform: uppercase;
+  color: azure;
+  box-shadow: 0 2px 2px 2px rgb(65, 61, 61);
+}
 
 @media (max-width: 1000px) {
   .recipe_prime {
@@ -29,5 +38,15 @@
   .image {
     margin: 2em 0 0 0;
     border-radius: 20px;
+  }
+  .back-btn {
+    font-size: small;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    color: azure;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px rgb(65, 61, 61);
   }
 }

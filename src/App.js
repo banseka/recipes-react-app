@@ -16,11 +16,6 @@ const App = () => {
 
   //component on mount useEffect
   useEffect(() => {
-    getRecipes();
-  }, [query]);
-
-  //function fetching recipes from api
-  const getRecipes = () => {
     fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     )
@@ -28,7 +23,7 @@ const App = () => {
       .then((data) => {
         setRecipes(data.hits);
       });
-  };
+  }, [query]);
 
   //updating search state parameters funtion
   const updateSearch = (e) => {
