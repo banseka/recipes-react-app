@@ -1,6 +1,7 @@
 .recipe_body {
   color: rgb(56, 53, 53);
   font-family: "Courier New", Courier, monospace;
+  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;

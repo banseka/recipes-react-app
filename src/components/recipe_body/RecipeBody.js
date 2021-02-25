@@ -3,7 +3,7 @@ import "./styles/recipeBodyStyles.css";
 
 function RecipeBody({ title, image, calories, ingredients, handleBodyopen }) {
   return (
-    <div>
+    <div className='recipe-body'>
       <button className='back-btn' onClick={handleBodyopen}>
         Back
       </button>

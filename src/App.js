@@ -5,8 +5,6 @@ import SlideShow from "./components/slideShow";
 import "./App.css";
 
 const App = () => {
-  const APP_ID = process.env.REACT_APP_API_ID;
-  const APP_KEY = process.env.REACT_APP_API_KEY;
   //state variables
   const [recipes, setRecipes] = useState([]);
   const [recipeBody, setRecipeBody] = useState([]);
@@ -16,13 +14,17 @@ const App = () => {
 
   //component on mount useEffect
   useEffect(() => {
+    const APP_ID = process.env.REACT_APP_API_ID;
+    const APP_KEY = process.env.REACT_APP_API_KEY;
     fetch(
       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
     )
       .then((res) => res.json())
       .then((data) => {
         setRecipes(data.hits);
-      });
+      })
+      .catch((error) => console.log(error));
+    setOpenBody(false);
   }, [query]);
 
   //updating search state parameters funtion
